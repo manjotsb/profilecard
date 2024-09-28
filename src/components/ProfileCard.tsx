@@ -4,16 +4,17 @@ import { Image, StyleSheet, Text, View } from "react-native";
 export default function ProfileCard(): React.JSX.Element{
     return(
         <View style={styles.card}>
-            <Image source={{uri: './assets/banner.jpg'}} style={styles.banner}></Image>
-            <Image source={{uri: './assets/profilePhoto.jpg'}} style={styles.profilepfp}></Image>
+            <Image source={require('../../src/assets/banner.jpg')} style={styles.banner}/>
+            <Image source={require('../../src/assets/profilePhoto.jpeg')} style={styles.profilepfp}/>
             <Text style={styles.name}>Manjot Singh</Text>
             <Text style={styles.subtitle}>Student</Text>
             <Text style={styles.introduction}>Just a student, looking to pass!!</Text>
+
             <View style={styles.socialIconview}>
-                <Image source={{uri: './assets/fb.jpg'}} style={styles.socialicons}></Image>
-                <Image source={{uri: './assets/insta.png'}} style={styles.socialicons}></Image>
-                <Image source={{uri: './assets/linkedin.jpg'}} style={styles.socialicons}></Image>
-                <Image source={{uri: './assets/twitter.png'}} style={styles.socialicons}></Image>
+                <Image source={require('../../src/assets/fb.png')} style={styles.socialicons}/>
+                <Image source={require('../../src/assets/insta.png')} style={styles.socialicons}/>
+                <Image source={require('../../src/assets/linkedin.png')} style={styles.socialicons}/>
+                <Image source={require('../../src/assets/twitter.png')} style={styles.socialicons}/>
             </View>
         </View>
     );
